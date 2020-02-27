@@ -242,6 +242,8 @@
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPSession.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPSessionStatus.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPTrackingState.cs" />
+    <Compile Include="Assets\InteriorButton.cs" />
+    <Compile Include="Assets\InteriorMode.cs" />
     <Compile Include="Assets\P_Button.cs" />
     <Compile Include="Assets\PlaneButton.cs" />
     <Compile Include="Assets\Plane_Mgr.cs" />
@@ -251,6 +253,8 @@
     <Compile Include="Assets\Test\Test_1\PolygonTester.cs" />
     <Compile Include="Assets\Test\Test_1\Triangulator.cs" />
     <Compile Include="Assets\TileGenerator.cs" />
+    <Compile Include="Assets\TileMeshButton.cs" />
+    <Compile Include="Assets\TileMeshMode.cs" />
     <Compile Include="Assets\TriangulatorZ.cs" />
     <None Include="Assets\GoogleARCore\Examples\AugmentedFaces\Materials\Shaders\AugmentedFaceOccluder.shader" />
     <None Include="Assets\GoogleARCore\SDK\Materials\ARBackground.shader" />
