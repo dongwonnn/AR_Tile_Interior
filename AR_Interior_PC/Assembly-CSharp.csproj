@@ -198,10 +198,10 @@
      <Compile Include="Assets\NGUI\Scripts\UI\UITexture.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
-     <Compile Include="Assets\PC_Test\AR_Tile\PolygonTester4.cs" />
-     <Compile Include="Assets\PC_Test\AR_Tile\Triangulator.cs" />
-     <Compile Include="Assets\PC_Test\AR_Tile\TriangulatorZ.cs" />
-     <Compile Include="Assets\PC_Test\AR_Tile\Ui_CreateMesh2.cs" />
+     <Compile Include="Assets\PC_Test\Folder\PolygonTester4.cs" />
+     <Compile Include="Assets\PC_Test\Folder\Triangulator.cs" />
+     <Compile Include="Assets\PC_Test\Folder\TriangulatorZ.cs" />
+     <Compile Include="Assets\PC_Test\Folder\Ui_CreateMesh2.cs" />
      <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
      <None Include="Assets\NGUI\ReadMe - 2018.3.0.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked 1.shader" />
@@ -244,31 +244,31 @@
      <None Include="Assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
      <None Include="Assets\NGUI\Examples\Resources\Localization.txt" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/oren9/Desktop/AR_Interior_PC/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>C:/Users/oren9/Documents/GitHub/AR_Tile_Interior/AR_Interior_PC/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Users/oren9/Desktop/AR_Interior_PC/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>C:/Users/oren9/Documents/GitHub/AR_Tile_Interior/AR_Interior_PC/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/oren9/Desktop/AR_Interior_PC/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/oren9/Documents/GitHub/AR_Tile_Interior/AR_Interior_PC/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/oren9/Desktop/AR_Interior_PC/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/oren9/Documents/GitHub/AR_Tile_Interior/AR_Interior_PC/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/oren9/Desktop/AR_Interior_PC/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>C:/Users/oren9/Documents/GitHub/AR_Tile_Interior/AR_Interior_PC/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>C:/Users/oren9/Desktop/AR_Interior_PC/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>C:/Users/oren9/Documents/GitHub/AR_Tile_Interior/AR_Interior_PC/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Users/oren9/Desktop/AR_Interior_PC/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>C:/Users/oren9/Documents/GitHub/AR_Tile_Interior/AR_Interior_PC/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/oren9/Desktop/AR_Interior_PC/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/oren9/Documents/GitHub/AR_Tile_Interior/AR_Interior_PC/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/oren9/Desktop/AR_Interior_PC/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Users/oren9/Documents/GitHub/AR_Tile_Interior/AR_Interior_PC/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
