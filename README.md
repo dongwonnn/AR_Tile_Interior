@@ -31,3 +31,8 @@ Unity, Android 7.0 Nougat 이상의 모바일 디바이스
 [Unity Mesh Document](https://docs.unity3d.com/kr/530/ScriptReference/Mesh.html)
 
 [AR Core Document](https://developers.google.com/ar/develop/unity)
+
+# AR_Interior_PC
+
+ PC에서 테스트하기 위한 프로젝트
+ NGUI 라이센스 필요하기 때문에 본 프로젝트에 적용 후 삭제 예정
