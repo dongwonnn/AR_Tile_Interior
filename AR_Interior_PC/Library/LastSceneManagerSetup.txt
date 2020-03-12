@@ -1,0 +1,5 @@
+sceneSetups:
+- path: Assets/PC_Test/AR_Tile/_test05_ScrollViewBase2.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
