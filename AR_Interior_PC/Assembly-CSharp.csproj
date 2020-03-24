@@ -202,6 +202,12 @@
      <Compile Include="Assets\PC_Test\Folder\Triangulator.cs" />
      <Compile Include="Assets\PC_Test\Folder\TriangulatorZ.cs" />
      <Compile Include="Assets\PC_Test\Folder\Ui_CreateMesh2.cs" />
+     <Compile Include="Assets\PC_Test\Test02\Item77.cs" />
+     <Compile Include="Assets\PC_Test\Test02\Item88.cs" />
+     <Compile Include="Assets\PC_Test\Test02\Ui_ItemList.cs" />
+     <Compile Include="Assets\PC_Test\Test02\Ui_ItemList88.cs" />
+     <Compile Include="Assets\PC_Test\Test02\Ui_SelectItem.cs" />
+     <Compile Include="Assets\PC_Test\Test02\Ui_SelectItem88.cs" />
      <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
      <None Include="Assets\NGUI\ReadMe - 2018.3.0.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked 1.shader" />

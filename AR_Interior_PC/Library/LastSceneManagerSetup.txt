@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/PC_Test/Folder/Test_On_PC.unity
+- path: Assets/PC_Test/Test02/_test3.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
