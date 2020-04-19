@@ -1,0 +1,24 @@
+ManifestFileVersion: 0
+CRC: 1213631705
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4772acdd243db54a8eb95395ec599edf
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2164263bd948184a9373784f776f453a
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Procedural_Materials/Floor Tiles/Textures/Tile-Example.jpg
+- Assets/New Material.mat
+- Assets/Procedural_Materials/Floor Tiles/Textures/New Material.mat
+- Assets/Procedural_Materials/Floor Tiles/Textures/Tile Floor_4K_Normal.tga
+- Assets/Procedural_Materials/Floor Tiles/Textures/Tile Floor_4K_Albedo.tga
+Dependencies: []
