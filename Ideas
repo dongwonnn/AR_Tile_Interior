@@ -1,0 +1,11 @@
+1. 타일 텍스쳐 변경 시, 터치로 오브젝트가 추가되는 문제 
+
+-> Tile texture 버튼 클릭 시 Pawn Manipulator SetActive(false)
+
+2. 타일 텍스쳐 사이즈
+
+-> Material에서 offset으로 바꿔보기
+
+3. 타일 텍스처 회전
+
+-> https://answers.unity.com/questions/951835/rotate-the-contents-of-a-texture.html
