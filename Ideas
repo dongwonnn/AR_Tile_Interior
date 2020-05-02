@@ -9,3 +9,7 @@
 3. 타일 텍스처 회전
 
 -> https://answers.unity.com/questions/951835/rotate-the-contents-of-a-texture.html
+
+4. 에셋 번들 개수 측정해 동적으로 에셋 받아와 저장
+
+(GetAseetBundle 스크립트 반복문 수정 필요)
