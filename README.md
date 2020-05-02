@@ -7,12 +7,15 @@ AR Core, Unity를 이용한 실시간 타일 프리뷰 어플리케이션.
 ### !현재까지 구현된 기능
 
 ● 메쉬(타일) 동적 생성
+
 ● 메쉬(타일) 텍스쳐 변경
+
 ● 런타임에 Scene에 오브젝트(가구) 배치
 
 ### !앞으로 구현해야 할 기능
 
 ● 배치된 오브젝트(가구) 이동, 변경, 기능 
+
 ● 텍스쳐 회전을 통한 메쉬(타일) 텍스쳐 정렬 기능
 
 ## Getting Started
@@ -41,6 +44,8 @@ Unity, Android 7.0 Nougat 이상의 모바일 디바이스
 ### AR
 
 첫번째 프로토타입.
+
+![proto1](https://user-images.githubusercontent.com/52204522/80852084-a74fdf00-8c60-11ea-9af9-154bff3865c8.gif)
 
 ### Demo
 
