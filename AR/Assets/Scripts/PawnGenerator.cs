@@ -45,6 +45,8 @@ namespace GoogleARCore.Examples.ObjectManipulation
         /// </summary>
         public GameObject ManipulatorPrefab;
 
+        public bool isFurnitureMode = false;
+
         /// <summary>
         /// Returns true if the manipulation can be started for the given gesture.
         /// </summary>
@@ -76,43 +78,46 @@ namespace GoogleARCore.Examples.ObjectManipulation
             {
                 return;
             }
-            
-            // Raycast against the location the player touched to search for planes.
-            TrackableHit hit;
-            TrackableHitFlags raycastFilter = TrackableHitFlags.PlaneWithinPolygon;
-            
-            if (Frame.Raycast(
-                gesture.StartPosition.x, gesture.StartPosition.y, raycastFilter, out hit))
+
+            if (isFurnitureMode)
             {
-                // Use hit pose and camera pose to check if hittest is from the
-                // back of the plane, if it is, no need to create the anchor.
-                if ((hit.Trackable is DetectedPlane) &&
-                    Vector3.Dot(FirstPersonCamera.transform.position - hit.Pose.position,
-                        hit.Pose.rotation * Vector3.up) < 0)
+                // Raycast against the location the player touched to search for planes.
+                TrackableHit hit;
+                TrackableHitFlags raycastFilter = TrackableHitFlags.PlaneWithinPolygon;
+
+                if (Frame.Raycast(
+                    gesture.StartPosition.x, gesture.StartPosition.y, raycastFilter, out hit))
                 {
-                    Debug.Log("Hit at back of the current DetectedPlane");
-                }
-                else
-                {
-                    // Instantiate game object at the hit pose.
-                    var gameObject = Instantiate(PawnPrefab, hit.Pose.position, hit.Pose.rotation);
-            
-                    // Instantiate manipulator.
-                    var manipulator =
-                        Instantiate(ManipulatorPrefab, hit.Pose.position, hit.Pose.rotation);
-            
-                    // Make game object a child of the manipulator.
-                    gameObject.transform.parent = manipulator.transform;
-            
-                    // Create an anchor to allow ARCore to track the hitpoint as understanding of
-                    // the physical world evolves.
-                    var anchor = hit.Trackable.CreateAnchor(hit.Pose);
-            
-                    // Make manipulator a child of the anchor.
-                    manipulator.transform.parent = anchor.transform;
-            
-                    // Select the placed object.
-                    manipulator.GetComponent<Manipulator>().Select();
+                    // Use hit pose and camera pose to check if hittest is from the
+                    // back of the plane, if it is, no need to create the anchor.
+                    if ((hit.Trackable is DetectedPlane) &&
+                        Vector3.Dot(FirstPersonCamera.transform.position - hit.Pose.position,
+                            hit.Pose.rotation * Vector3.up) < 0)
+                    {
+                        Debug.Log("Hit at back of the current DetectedPlane");
+                    }
+                    else
+                    {
+                        // Instantiate game object at the hit pose.
+                        var gameObject = Instantiate(PawnPrefab, hit.Pose.position, hit.Pose.rotation);
+
+                        // Instantiate manipulator.
+                        var manipulator =
+                            Instantiate(ManipulatorPrefab, hit.Pose.position, hit.Pose.rotation);
+
+                        // Make game object a child of the manipulator.
+                        gameObject.transform.parent = manipulator.transform;
+
+                        // Create an anchor to allow ARCore to track the hitpoint as understanding of
+                        // the physical world evolves.
+                        var anchor = hit.Trackable.CreateAnchor(hit.Pose);
+
+                        // Make manipulator a child of the anchor.
+                        manipulator.transform.parent = anchor.transform;
+
+                        // Select the placed object.
+                        manipulator.GetComponent<Manipulator>().Select();
+                    }
                 }
             }
         }

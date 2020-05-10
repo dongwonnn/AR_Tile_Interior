@@ -19,10 +19,12 @@ public class MeshGenerator : MonoBehaviour
     private List<GameObject> Points = new List<GameObject>();
     private List<Vector3> positions = new List<Vector3>();
 
-    Mesh mesh;
+    public Mesh mesh;
     MeshFilter meshFilter;
     MeshRenderer meshRenderer;
     LineRenderer lineRenderer;
+
+    public Vector3[] vertsForTextureChange;
 
     bool isCreated;
 
@@ -115,28 +117,32 @@ public class MeshGenerator : MonoBehaviour
             {
                 vertices[i] = new Vector3(vert[i].x, vert[i].y, vert[i].z);
             }
+            vertsForTextureChange = vertices;
 
             // Create the mesh
             mesh.Clear();
             mesh.vertices = vertices;
             mesh.triangles = indices;
-            mesh.uv = tr.CalculateUV();
+            //mesh.uv = tr.CalculateUV();
+            //mesh.RecalculateNormals();
+            //mesh.RecalculateBounds();
+            //mat.mainTextureScale = tr.CalculateScale(1f);
+
+            // Create UV maps for mesh
+            Vector2[] uvs = new Vector2[vertices.Length];
+            Bounds bounds = mesh.bounds;
+            int j = 0;
+            while (j < uvs.Length)
+            {
+                uvs[j] = new Vector2(vertices[j].x / bounds.size.x, vertices[j].z / bounds.size.z);
+                j++;
+            }
+            mesh.uv = uvs;
+
             mesh.RecalculateNormals();
             mesh.RecalculateBounds();
-            mat.mainTextureScale = tr.CalculateScale(1f);
 
-            //// Create UV maps for mesh
-            //Vector2[] uvs = new Vector2[vertices.Length];
-            //Bounds bounds = msh.bounds;
-            //int j = 0;
-            //while (j < uvs.Length)
-            //{
-            //    uvs[j] = new Vector2(vertices[j].x / bounds.size.x, vertices[j].z / bounds.size.z);
-            //    j++;
-            //}
-            //msh.uv = uvs;
-
-            //rend.material.mainTextureScale = new Vector2(bounds.size.x, bounds.size.z);
+            meshRenderer.material.mainTextureScale = new Vector2(bounds.size.x, bounds.size.z);
         }
     }
     void DestroyPoints()
@@ -146,7 +152,7 @@ public class MeshGenerator : MonoBehaviour
             Destroy(Points[i]);
         }
     }
-    public void onClickedButton()
+    public void ClickedGenerateButton()
     {
         GenerateMesh();
         DestroyPoints();

@@ -22,7 +22,7 @@ public class ScrollViewContents : MonoBehaviour
         for (int i = 0; i < asset.mats.Count ; i++)
         {
             GameObject item = Instantiate(itemPrefab);
-            item.GetComponent<TextureButton>().buttonIndex = i;
+            item.GetComponent<TextureChange>().buttonIndex = i;
             item.GetComponent<Image>().sprite = asset.sprites[i];
             item.transform.SetParent(GameObject.Find("Content").transform);
         }

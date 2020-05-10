@@ -204,7 +204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 035bca4b574dc4a2a8d83b85d750c600, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectTranslationMode: 2
+  ObjectTranslationMode: 0
   MaxTranslationDistance: 3
 --- !u!114 &114264350914666538
 MonoBehaviour:

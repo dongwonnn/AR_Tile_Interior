@@ -5,10 +5,12 @@ using UnityEngine.UIElements;
 
 public class UIShow : MonoBehaviour
 {
-    GameObject CreateButton;
-    GameObject TextureButton;
-    GameObject PlaneButton;
-    GameObject ScrollView;
+    public GameObject CreateButton;
+    public GameObject TextureButton;
+    public GameObject PlaneButton;
+    public GameObject ScrollView;
+    public GameObject FurnitureModeButton;
+    public GameObject FurnitureModeText;
 
     //GameObject MeshGenerator;
     GameObject PawnGenerator;
@@ -19,14 +21,15 @@ public class UIShow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        CreateButton = GameObject.Find("CreateButton");
-        TextureButton = GameObject.Find("Canvas").transform.Find("TextureChangeButton").gameObject;
-        PlaneButton = GameObject.Find("Canvas").transform.Find("HidePlaneButton").gameObject;
-        ScrollView = GameObject.Find("Canvas").transform.Find("TextureScrollView").gameObject;
+        //CreateButton = GameObject.Find("CreateButton");
+        //TextureButton = GameObject.Find("Canvas").transform.Find("TextureChangeButton").gameObject;
+        //PlaneButton = GameObject.Find("Canvas").transform.Find("HidePlaneButton").gameObject;
+        //ScrollView = GameObject.Find("Canvas").transform.Find("TextureScrollView").gameObject;
+        //TextureRotationButton = GameObject.Find("Canvas").transform.Find("TextureRotationButton").gameObject;
+        //FurnitureModeButton = GameObject.Find("Canvas").transform.Find("FurnitureModeButton").gameObject;
+        //FurnitureModeText = GameObject.Find("Canvas").transform.Find("FurnitureModeText").gameObject;
 
-        //MeshGenerator = GameObject.Find("Generator").transform.Find("MeshGenerator").gameObject;
         PawnGenerator = GameObject.Find("Generator").transform.Find("PawnGenerator").gameObject;
-        //ManipulationSystem = GameObject.Find("ManipulationSystem");
         
         isOnScrollView = false;
     }
@@ -37,7 +40,8 @@ public class UIShow : MonoBehaviour
         TextureButton.SetActive(true);
         PlaneButton.SetActive(true);
         PawnGenerator.SetActive(true);
-        //ManipulationSystem.SetActive(true);
+        FurnitureModeButton.SetActive(true);
+        FurnitureModeText.SetActive(true);
     }
 
     public void scrollView()
