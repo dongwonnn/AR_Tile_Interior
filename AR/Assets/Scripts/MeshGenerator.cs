@@ -132,11 +132,14 @@ public class MeshGenerator : MonoBehaviour
             Vector2[] uvs = new Vector2[vertices.Length];
             Bounds bounds = mesh.bounds;
             int j = 0;
+
+
             while (j < uvs.Length)
             {
                 uvs[j] = new Vector2(vertices[j].x / bounds.size.x, vertices[j].z / bounds.size.z);
                 j++;
             }
+
             mesh.uv = uvs;
 
             mesh.RecalculateNormals();
