@@ -15,6 +15,7 @@ public class ScrollViewContents : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("ScrollViewContents on");
         assetBundle = GameObject.Find("AssetBundleManager").gameObject;
         asset = assetBundle.GetComponent<GetAssetBundle>();
 

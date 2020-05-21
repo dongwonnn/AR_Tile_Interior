@@ -40,6 +40,8 @@ public class UIShow : MonoBehaviour
         TextureButton.SetActive(true);
         PlaneButton.SetActive(true);
         PawnGenerator.SetActive(true);
+
+        //가구
         FurnitureModeButton.SetActive(true);
         FurnitureModeText.SetActive(true);
     }
@@ -48,11 +50,13 @@ public class UIShow : MonoBehaviour
     {
         if(!isOnScrollView)
         {
+            Debug.Log("is false"); 
             ScrollView.SetActive(true);
             isOnScrollView = true;
         }
         else
         {
+            Debug.Log("is true");
             ScrollView.SetActive(false);
             isOnScrollView = false;
         }
