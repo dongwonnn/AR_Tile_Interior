@@ -7,7 +7,7 @@ namespace GoogleARCore.Examples.ObjectManipulation
     public class SwapFurnitureMode : MonoBehaviour
     {
         GameObject pawnGenerator;
-        public Text furnitureModeText;
+        //public Text furnitureModeText;
         // Start is called before the first frame update
         void Start()
         {
@@ -20,12 +20,14 @@ namespace GoogleARCore.Examples.ObjectManipulation
             if (pawnGenerator.GetComponent<PawnGenerator>().isFurnitureMode)
             {
                 pawnGenerator.GetComponent<PawnGenerator>().isFurnitureMode = false;
-                furnitureModeText.text = "Furniture Mode OFF";
+                //pawnGenerator.SetActive(true);
+                //furnitureModeText.text = "Transform Furniture";
             }
             else
             {
                 pawnGenerator.GetComponent<PawnGenerator>().isFurnitureMode = true;
-                furnitureModeText.text = "Furniture Mode ON";
+                //pawnGenerator.SetActive(false);
+                //furnitureModeText.text = "Selecting Furniture";
             }
         }
     }

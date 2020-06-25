@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
+using UnityEngine.UI;
 using UnityEngine.UIElements;
 
 public class UIShow : MonoBehaviour
@@ -8,15 +10,24 @@ public class UIShow : MonoBehaviour
     public GameObject CreateButton;
     public GameObject TextureButton;
     public GameObject PlaneButton;
-    public GameObject ScrollView;
+    public GameObject ScrollViewTexture;
+    public GameObject ScrollViewFurniture;
     public GameObject FurnitureModeButton;
     public GameObject FurnitureModeText;
+    public GameObject TextureRotationRightButton;
+    public GameObject TextureRotationLeftButton;
+    public GameObject DestroyFurnitureButton;
+
+    public Text costText;
+
+    float furnitureCost = 0.0f;
 
     //GameObject MeshGenerator;
     GameObject PawnGenerator;
     //GameObject ManipulationSystem;
 
-    bool isOnScrollView;
+    bool isOnScrollViewTexture;
+    bool isOnScrollViewFurniture;
 
     // Start is called before the first frame update
     void Start()
@@ -30,8 +41,15 @@ public class UIShow : MonoBehaviour
         //FurnitureModeText = GameObject.Find("Canvas").transform.Find("FurnitureModeText").gameObject;
 
         PawnGenerator = GameObject.Find("Generator").transform.Find("PawnGenerator").gameObject;
-        
-        isOnScrollView = false;
+
+        isOnScrollViewTexture = false;
+        isOnScrollViewFurniture = false;
+    }
+
+    private void Update()
+    {
+        furnitureCost = gameObject.GetComponent<CalcFurnitureCost>().cost;
+        costText.text = "Furniture Cost : " + furnitureCost + "$";
     }
 
     public void afterCreation()
@@ -42,19 +60,36 @@ public class UIShow : MonoBehaviour
         PawnGenerator.SetActive(true);
         FurnitureModeButton.SetActive(true);
         FurnitureModeText.SetActive(true);
+        TextureRotationRightButton.SetActive(true);
+        TextureRotationLeftButton.SetActive(true);
+        DestroyFurnitureButton.SetActive(true);
     }
 
-    public void scrollView()
+    public void scrollViewTexture()
     {
-        if(!isOnScrollView)
+        if(!isOnScrollViewTexture)
         {
-            ScrollView.SetActive(true);
-            isOnScrollView = true;
+            ScrollViewTexture.SetActive(true);
+            isOnScrollViewTexture = true;
         }
         else
         {
-            ScrollView.SetActive(false);
-            isOnScrollView = false;
+            ScrollViewTexture.SetActive(false);
+            isOnScrollViewTexture = false;
+        }
+    }
+
+    public void scrollViewFurniture()
+    {
+        if (!isOnScrollViewFurniture)
+        {
+            ScrollViewFurniture.SetActive(true);
+            isOnScrollViewFurniture = true;
+        }
+        else
+        {
+            ScrollViewFurniture.SetActive(false);
+            isOnScrollViewFurniture = false;
         }
     }
 }

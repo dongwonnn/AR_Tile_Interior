@@ -9,6 +9,9 @@ using UnityEngine.UI;
 public class MeshGenerator : MonoBehaviour
 {
     public Material mat;
+    public int textureIndex = 0;
+    public float areaSize = 0.0f;
+    public float areaSize2 = 0.0f;
 
     public Camera FirstPersonCamera;
 
@@ -26,7 +29,15 @@ public class MeshGenerator : MonoBehaviour
 
     public Vector3[] vertsForTextureChange;
 
+    public Vector2[] uvsForChange;
+
     bool isCreated;
+
+    float degree = .5f;
+    float degreecount = 0f;
+
+    Vector2[] originaluvs;
+    Vector2[] rotateduvs;
 
     // Start is called before the first frame update
     void Start()
@@ -142,10 +153,18 @@ public class MeshGenerator : MonoBehaviour
 
             mesh.uv = uvs;
 
+            originaluvs = uvs;
+            rotateduvs = uvs;
+
             mesh.RecalculateNormals();
             mesh.RecalculateBounds();
 
             meshRenderer.material.mainTextureScale = new Vector2(bounds.size.x, bounds.size.z);
+
+            //var anchor = hit.Trackable.CreateAnchor(hit.Pose);
+            //var anchor = meshRenderer.bounds.center;
+            areaSize = Area(mesh) * 10000.0f;
+            areaSize2 = bounds.size.x * bounds.size.z;
         }
     }
     void DestroyPoints()
@@ -161,6 +180,56 @@ public class MeshGenerator : MonoBehaviour
         DestroyPoints();
         Destroy(lineRenderer);
         isCreated = true;
+    }
+    public void RotateTextureRight()
+    {
+        for (int i = 0; i < rotateduvs.Length; i++)
+        {
+            if (degreecount <= 4.5)
+                rotateduvs[i] =
+                Quaternion.AngleAxis(degree, Vector3.left) *
+                Quaternion.AngleAxis(degree, Vector3.forward) * rotateduvs[i];
+            else
+            {
+                rotateduvs[i] =
+                Quaternion.AngleAxis(degree, Vector3.right) *
+                Quaternion.AngleAxis(degree, Vector3.forward) * rotateduvs[i];
+            }
+        }
+        mesh.uv = rotateduvs;
+        degreecount += 0.5f;
+        if (degreecount == 9) degreecount = 0;
+    }
+    public void RotateTextureLeft()
+    {
+        for (int i = 0; i < rotateduvs.Length; i++)
+        {
+            if (degreecount <= 4.5)
+                rotateduvs[i] =
+                Quaternion.AngleAxis(degree, Vector3.up) *
+                Quaternion.AngleAxis(degree, Vector3.back) * rotateduvs[i];
+            else
+            {
+                rotateduvs[i] =
+                Quaternion.AngleAxis(degree, Vector3.down) *
+                Quaternion.AngleAxis(degree, Vector3.back) * rotateduvs[i];
+            }
+        }
+        mesh.uv = rotateduvs;
+        degreecount += 0.5f;
+        if (degreecount == 9) degreecount = 0;
+    }
+    public float Area(Mesh m)
+    {
+        Vector3[] mVertices = m.vertices;
+        Vector3 result = Vector3.zero;
+        for (int p = mVertices.Length - 1, q = 0; q < mVertices.Length; p = q++)
+        {
+            result += Vector3.Cross(mVertices[q], mVertices[p]);
+        }
+        Debug.Log(result);
+        result *= 0.5f;
+        return result.magnitude;
     }
 }
 
