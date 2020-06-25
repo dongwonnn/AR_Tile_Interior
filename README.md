@@ -41,11 +41,33 @@ Unity, Android 7.0 Nougat 이상의 모바일 디바이스
 
 마지막 데모
 
-### Demo
+## Icon copyrights
+furniture-and-household : this icon is made by Icongeek26 from https://www.flaticon.com/
 
-NGUI
+(furniture icon)
 
-### Unity Project File
+shape : this icon is  made by Freepik from https://www.flaticon.com/
 
-초기 모듈 설계 
+(floor tile icon)
+
+edit-tools : this icon is made by Becris from https://www.flaticon.com/
+
+(rotation icon)
+
+tools-and-utensils : this icon is made by Kiranshastry from https://www.flaticon.com/
+
+(delete icon)
+
+interface : this icon is made by Kiranshastry from https://www.flaticon.com/
+
+(eye icon)
+
+return : this icon is made by bqlqn from https://www.flaticon.com/
+
+(arrow icon)
+
+shapes-and-symbols : this icon is made by Pixel perfect from https://www.flaticon.com/
+
+(check icon)
+
 
