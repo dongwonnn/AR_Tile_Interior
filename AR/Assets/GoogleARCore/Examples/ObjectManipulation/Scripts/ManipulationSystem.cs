@@ -176,7 +176,6 @@ namespace GoogleARCore.Examples.ObjectManipulation
             {
                 return;
             }
-
             Deselect();
             SelectedObject = target;
         }

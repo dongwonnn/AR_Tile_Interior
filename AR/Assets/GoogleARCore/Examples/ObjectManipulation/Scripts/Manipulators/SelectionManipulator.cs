@@ -21,6 +21,7 @@
 namespace GoogleARCore.Examples.ObjectManipulation
 {
     using UnityEngine;
+    using TMPro;
 
     /// <summary>
     /// Controls the selection of an object through Tap gesture.

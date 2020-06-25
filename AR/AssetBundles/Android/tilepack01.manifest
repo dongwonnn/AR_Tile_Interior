@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1365015920
+CRC: 3344744124
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 3965fd33f49dd0833ee30018be55bf63
+    Hash: da06bd221c72325527778bea12cbe6c0
   TypeTreeHash:
     serializedVersion: 2
     Hash: 5678241641794813c2c5abc1654e95b9
@@ -29,14 +29,11 @@ Assets:
 - Assets/Materials/Textures/T_Tile07.jpg
 - Assets/Materials/Textures/T_Tile06.jpg
 - Assets/Materials/Textures/T_Tile03.jpg
-- Assets/Materials/M_Tile01.mat
 - Assets/Materials/Textures/ST_Tile08.jpg
 - Assets/Materials/Textures/T_Tile09.jpg
-- Assets/Materials/Textures/N_Tile01.tga
 - Assets/Materials/Textures/ST_Tile05.jpg
 - Assets/Materials/M_Tile02.mat
 - Assets/Materials/M_Tile05.mat
-- Assets/Materials/Textures/ST_Tile01.tga
 - Assets/Materials/Textures/ST_Tile03.jpg
 - Assets/Materials/Textures/T_Tile02.jpg
 - Assets/Materials/Textures/ST_Tile09.jpg

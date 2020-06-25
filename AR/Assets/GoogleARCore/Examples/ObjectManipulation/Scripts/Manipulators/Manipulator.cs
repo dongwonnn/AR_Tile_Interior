@@ -31,6 +31,8 @@ namespace GoogleARCore.Examples.ObjectManipulation
 
         private GameObject m_SelectedObject;
 
+        bool destroySelect = false;
+
         /// <summary>
         /// Makes this game object become the Selected Object.
         /// </summary>
