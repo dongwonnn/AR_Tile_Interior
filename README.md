@@ -41,7 +41,7 @@ Unity, Android 7.0 Nougat 이상의 모바일 디바이스
 
 마지막 데모
 
-![Screenshot_20200625-213158_AR Test](https://user-images.githubusercontent.com/52204522/85831277-05182780-b7c9-11ea-9486-e86f4416370a.jpg)
+![10](https://user-images.githubusercontent.com/52204522/85831487-588a7580-b7c9-11ea-8cd0-499e2bf5bc28.png)
 
 ## Icon copyrights
 furniture-and-household : this icon is made by Icongeek26 from https://www.flaticon.com/
