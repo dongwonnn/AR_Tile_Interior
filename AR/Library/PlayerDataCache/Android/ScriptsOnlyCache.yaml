@@ -62,8 +62,6 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Text
     - UnityEngine.UI.VerticalLayoutGroup
-    com.unity.multiplayer-hlapi.Runtime.dll:
-    - UnityEngine.Networking.NetworkCallbacks
   sceneClasses:
     Assets/Scenes/Proto1.unity:
     - Class: 1
@@ -267,7 +265,7 @@ ScriptsOnlyBuild:
     className: Anchor
   - hash:
       serializedVersion: 2
-      Hash: 82213b19ce3927ee02bdac47a85cefda
+      Hash: c8d6913408cf043136e5389355703535
     assemblyName: Assembly-CSharp.dll
     namespaceName: GoogleARCore.Examples.Common
     className: OnOffPlane
@@ -1348,4 +1346,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/Proto1.unity
-  playerPath: C:/Users/heo/Downloads/demo-build10.apk
+  playerPath: C:/Users/heo/Downloads/demo-build-final5.apk

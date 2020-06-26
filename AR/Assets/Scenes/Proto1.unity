@@ -467,8 +467,19 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114747870037459092, guid: 26558ae1d2e7243728486d789f984c53,
+        type: 3}
+      propertyPath: PointColor.a
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26558ae1d2e7243728486d789f984c53, type: 3}
+--- !u!1 &150429109 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1536853937296922, guid: 26558ae1d2e7243728486d789f984c53,
+    type: 3}
+  m_PrefabInstance: {fileID: 150429108}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &207678928
 GameObject:
   m_ObjectHideFlags: 0
@@ -700,7 +711,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1e1d501c695fc6458169ab63cd26b5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ButtonText: {fileID: 0}
+  pointCloud: {fileID: 150429109}
 --- !u!1 &278556698
 GameObject:
   m_ObjectHideFlags: 0
@@ -3086,7 +3097,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1e1d501c695fc6458169ab63cd26b5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ButtonText: {fileID: 0}
+  pointCloud: {fileID: 0}
 --- !u!1 &1199566799
 GameObject:
   m_ObjectHideFlags: 0
