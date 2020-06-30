@@ -1346,4 +1346,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/Proto1.unity
-  playerPath: C:/Users/heo/Downloads/demo-build-final5.apk
+  playerPath: C:/Users/heo/Downloads/demo-build-final.apk
