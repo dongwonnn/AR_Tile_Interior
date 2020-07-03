@@ -2523,6 +2523,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: aba2d2ffd39dbb54a8acae6a00f86ddc, type: 3}
   - {fileID: 21300000, guid: 361598c405c0c934b9c92399bf621d4f, type: 3}
   - {fileID: 21300000, guid: c3d2be455e753314a8ceecf837452193, type: 3}
+  - {fileID: 21300000, guid: 2d3dd39e0337a3843aede2003ceec87d, type: 3}
 --- !u!1 &1014612604
 GameObject:
   m_ObjectHideFlags: 0
@@ -3609,6 +3610,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1995114164396524, guid: cf498fc35b538884db557f7a9a2c0ef9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4461716624848968, guid: cf498fc35b538884db557f7a9a2c0ef9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -5069,6 +5074,7 @@ MonoBehaviour:
   - {fileID: 694075259634972625, guid: dbe3f890561cad34a8224b4f1d66fb8b, type: 3}
   - {fileID: 4618245405465883828, guid: 0e48dc27acaf1fc47a92d4eb5125a49e, type: 3}
   - {fileID: 894751388825650027, guid: 4b5440650f3d0c7499b7584d1289804b, type: 3}
+  - {fileID: 7245794173654357601, guid: 9c45d664ae039af40a188d3bba8ff1c5, type: 3}
 --- !u!1 &2077429796
 GameObject:
   m_ObjectHideFlags: 0
