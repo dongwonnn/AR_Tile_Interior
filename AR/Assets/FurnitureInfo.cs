@@ -34,6 +34,7 @@ namespace GoogleARCore.Examples.ObjectManipulation
         public void onClickedButton()
         {
             PawnGenerator.GetComponent<PawnGenerator>().PawnPrefab = furnitures[buttonIndex];
+            PawnGenerator.GetComponent<PawnGenerator>().isFurnitureMode = 2;
         }
     }
 }
