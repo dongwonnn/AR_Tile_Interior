@@ -45,7 +45,7 @@ namespace GoogleARCore.Examples.ObjectManipulation
         /// </summary>
         public GameObject ManipulatorPrefab;
 
-        public bool isFurnitureMode = false;
+        public int isFurnitureMode = 0;
 
         /// <summary>
         /// Returns true if the manipulation can be started for the given gesture.
@@ -79,7 +79,7 @@ namespace GoogleARCore.Examples.ObjectManipulation
                 return;
             }
 
-            if (isFurnitureMode)
+            if (isFurnitureMode == 3)
             {
                 // Raycast against the location the player touched to search for planes.
                 TrackableHit hit;
@@ -118,6 +118,7 @@ namespace GoogleARCore.Examples.ObjectManipulation
                         // Select the placed object.
                         manipulator.GetComponent<Manipulator>().Select();
                     }
+                    isFurnitureMode = 0;
                 }
             }
         }
