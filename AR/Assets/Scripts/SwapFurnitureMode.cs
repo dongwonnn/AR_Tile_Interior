@@ -17,17 +17,21 @@ namespace GoogleARCore.Examples.ObjectManipulation
         // Update is called once per frame
         public void onClickedButton()
         {
-            if (pawnGenerator.GetComponent<PawnGenerator>().isFurnitureMode)
+            if (pawnGenerator.GetComponent<PawnGenerator>().isFurnitureMode == 0)
             {
-                pawnGenerator.GetComponent<PawnGenerator>().isFurnitureMode = false;
+                pawnGenerator.GetComponent<PawnGenerator>().isFurnitureMode = 1;
                 //pawnGenerator.SetActive(true);
                 //furnitureModeText.text = "Transform Furniture";
             }
-            else
+            else if (pawnGenerator.GetComponent<PawnGenerator>().isFurnitureMode == 2)
             {
-                pawnGenerator.GetComponent<PawnGenerator>().isFurnitureMode = true;
+                pawnGenerator.GetComponent<PawnGenerator>().isFurnitureMode = 3;
                 //pawnGenerator.SetActive(false);
                 //furnitureModeText.text = "Selecting Furniture";
+            }
+            else
+            {
+                pawnGenerator.GetComponent<PawnGenerator>().isFurnitureMode = 0;
             }
         }
     }
