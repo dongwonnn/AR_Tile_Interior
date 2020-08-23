@@ -72,4 +72,4 @@ shapes-and-symbols : this icon is made by Pixel perfect from https://www.flatico
 
 (check icon)
 
-
+Photo Mode Button Icon is from www.onlinewebfonts.com
